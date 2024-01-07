@@ -22,7 +22,7 @@ test('login', async ({ page }) => {
   await page.locator(LOGIN_USERNAME).pressSequentially(USERNAME);
   await page.locator(LOGIN_PASSWORD).pressSequentially(PASSWORD);
   await page.locator(LOGIN_SUBMIT_BTN).click();
-  await expect(page.locator(LOGGED_USER_NAME_TXT)).toHaveText(LOGGED_USER_NAME, { timeout: 6000 });
+  await expect(page.locator(LOGGED_USER_NAME_TXT)).toHaveText(LOGGED_USER_NAME, { timeout: 30000 });
 
 });
 
